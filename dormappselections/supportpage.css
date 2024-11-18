@@ -1,0 +1,40 @@
+#contact_form {
+  background-color: #405d27;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center;    /* Center items horizontally */
+}
+
+.row {
+  display: flex;
+  flex-direction: column; /* Stack label and input vertically */
+  align-items: center;
+}
+
+.row label {
+  color: #FFFFFF;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+input[type=text], textarea {
+  text-align: center;
+  background-color: #82b74b;
+  border-radius: 10px;
+  color: #FFFFFF;
+  margin-top: 5px;
+  margin-bottom: 1px;
+  box-shadow: 5px 5px 10px #3e4444;
+  width: 200%; /* Adjust width as desired */
+}
+
+input[type=submit] {
+  background-color: #ff7b25;
+  color: #FFFFFF;
+  border-radius: 10px;
+  font-size: 18px;
+  box-shadow: 5px 5px 5px #3e4444;
+  margin-top: 15px;
+}

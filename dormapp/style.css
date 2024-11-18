@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* General Reset and Global Styles */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif; /* Apply the 'Poppins' font globally */
+  box-sizing: border-box; /* Ensure padding and border don't affect element width */
+}
+
+/* Container Section */
+.container {
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  background-image: url(https://images.summitmedia-digital.com/candy/images/2023/04/07/bulacan-state-university.jpg); /* Only background image */
+  background-size: cover; /* Cover the entire container */
+  background-position: center; /* Center-align background image */
+  position: relative; /* Allow child elements like nav and text to position absolutely */
+  overflow: hidden; /* Prevent content overflow */
+  transition: background-image 2s ease-in-out; /* Smooth transition for background image */
+  background-color: transparent; /* Ensure background is transparent during transition */
+}
+
+
+/* Navigation Bar */
+nav {
+  width: 84%;
+  margin: auto; /* Center the navigation bar */
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Vertically center items */
+  justify-content: space-between; /* Space out logo and menu items */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+/* Logo */
+.logo {
+  width: 45px;
+  cursor: pointer; /* Add hover pointer for interactivity */
+  margin-bottom: 10px; /* Space for wrapping on small screens */
+}
+
+/* Navigation Menu */
+nav ul {
+  display: flex; /* Flex layout for menu items */
+  flex-wrap: wrap; /* Wrap items on smaller screens */
+  justify-content: center; /* Center items when wrapped */
+  gap: 10px; /* Add spacing between items */
+}
+
+/* Individual Menu Items */
+nav ul li {
+  list-style: none; /* Remove default list styling */
+  margin: 10px 15px; /* Add spacing between items */
+}
+
+/* Menu Links */
+nav ul li a {
+  text-transform: uppercase; /* Capitalize text */
+  text-decoration: none; /* Remove underline */
+  color: #fff; /* White text color */
+  padding: 5px 20px; /* Add padding inside links */
+  border: 1px solid transparent; /* Invisible border for alignment */
+  transition: 0.5s ease; /* Smooth transition for hover effects */
+}
+
+/* Hover Effect for Menu Links */
+nav ul li a:hover {
+  color: #000; /* Change text color to black */
+  background: #fff; /* Add white background */
+}
+
+
+/* Active Menu Item */
+nav ul li.active a {
+  color: #000; /* Black text for active link */
+  background: #fff; /* White background for active link */
+}
+
+
+/* Text Section */
+.text {
+  position: relative;
+  z-index: 2; /* Place above background */
+  margin-top: 150px; /* Space from top */
+  margin-left: 10%; /* Align text to the left */
+  text-align: left; /* Left-align content */
+  max-width: 700px; /* Limit text width for better readability */
+}
+
+/* Main Headline */
+.text h2 {
+  font-size: 3em; /* Large headline */
+  font-weight: 800; /* Bold text */
+  color: #fff; /* White text color */
+  line-height: 1.2em; /* Adjust line spacing */
+  text-transform: uppercase; /* Capitalize text */
+}
+
+
+/* Subheadline */
+.text h3 {
+  font-size: 2em;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.2em;
+  text-transform: uppercase;
+}
+
+/* Paragraph Text */
+.text p {
+  font-size: 1em;
+  color: #fff; /* White text color */
+  margin: 20px 0; /* Space above and below */
+  font-weight: 400; /* Regular text weight */
+}
+
+
+/* Call-to-Action Button */
+.text a {
+  display: inline-block; /* Make button inline-block */
+  font-size: 0.9em; /* Smaller text */
+  background: #fff; /* White background */
+  padding: 10px 20px; /* Padding inside button */
+  text-transform: uppercase; /* Capitalize text */
+  text-decoration: none; /* Remove underline */
+  font-weight: 500; /* Medium weight */
+  margin-top: 10px; /* Space above button */
+  color: #111; /* Dark text color */
+  letter-spacing: 2px; /* Spacing between letters */
+  transition: 0.2s; /* Smooth hover effect */
+}
+/* Hover Effect for Button */
+.text a:hover {
+  letter-spacing: 4px; /* Increase letter spacing on hover */
+}
+
+
+/* Social Media Section */
+.social {
+  position: absolute;
+  bottom: 20px; /* Place at bottom of the container */
+  display: flex; /* Flex layout for alignment */
+  justify-content: center; /* Center align icons */
+  width: 100%; /* Full width for alignment */
+}
+
+/* Individual Social Media Icons */
+.social li {
+  list-style: none; /* Remove default list styling */
+}
+
+
+.social li a {
+  display: inline-block;
+  margin: 0 10px; /* Add spacing between icons */
+  filter: invert(1); /* Invert icon colors */
+  transform: scale(0.5); /* Reduce size */
+  transition: 0.5s; /* Smooth hover effect */
+}
+
+/* Hover Effect for Social Icons */
+.social li a:hover {
+  transform: scale(0.5) translateY(-15px); /* Lift icon on hover */
+}
+
+/* Responsive Design: Adjustments for Mobile Devices */
+@media screen and (max-width: 768px) {
+  /* Navigation Bar */
+  nav {
+    width: 95%; /* Full width for smaller screens */
+  }
+
+  /* Text Section Adjustments */
+  .text {
+    margin-top: 100px; /* Adjust top margin */
+    margin-left: 0; /* Center text */
+    text-align: center; /* Center-align content */
+  }
+
+  /* Headline and Subheadline Sizes */
+  .text h2 {
+    font-size: 2.5em; /* Smaller headline size */
+  }
+
+  .text h3 {
+    font-size: 1.8em; /* Smaller subheadline size */
+  }
+
+  /* Paragraph Text Adjustments */
+  .text p {
+    font-size: 0.9em; /* Smaller text size */
+    max-width: 90%; /* Limit width */
+    margin: 20px auto; /* Center-align */
+  }
+
+  /* Button Adjustments */
+  .text a {
+    font-size: 1em; /* Adjust button size */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Text Section Adjustments for Very Small Screens */
+  .text {
+    margin-top: 80px; /* Adjust top margin */
+    margin-left: 5%; /* Small left margin */
+  }
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Page</title>
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="supportpage.css">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Box Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <a href="#" class="logo">Dormitory<span>Selections</span></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <ul class="navbar">
+            <li><a href="/dormi-app-main/Project Test(Alpha)/dormappselections/index.html">Home</a></li>
+            <li><a href="#shop">Dormitories</a></li>
+            <li><a href="#students">Students</a></li>
+            <li><a href="#brands">Our Partners</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+
+    <!-- Support Form Section -->
+    <section class="support" id="support">
+        <div class="support-container">
+            <h2>Contact Support</h2>
+            <p>If you have any questions or need assistance, please fill out the form below.</p>
+            
+            <form id="contact_form" action="#" enctype="multipart/form-data">
+                <div class="row">
+                    <label class="required" for="name">Your name:</label><br />
+                    <input id="name" class="input" name="name" type="text" size="30" /><br />
+                    <span id="name_validation" class="error_message"></span>
+                </div>
+                <div class="row">
+                    <label class="required" for="email">Your Email</label><br />
+                    <input id="email" class="input" name="email" type="text" size="30" /><br />
+                </div>
+                <div class="row">
+                    <label class="required" for="message">Your Message</label><br />
+                    <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+                    <span id="message_validation" class="error_message"></span>
+                </div>
+
+                <input type="submit" id="submit_button" class="btn" value="Send email" />
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer" id="footer">
+        <div class="footer-box">
+            <h2>Dormitory<span>Selections</span></h2>
+            <p>Your comfort is our happiness. Reach out for any support or queries.</p>
+            <div class="social">
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+            </div>
+        </div>
+        <div class="footer-box contact-info">
+            <h3>Contact</h3>
+            <span>Malolos Bulacan</span>
+            <span>+1 100 1004 0001</span>
+            <span>support@dormitoryselections.com</span>
+        </div>
+    </section>
+
+    <div class="copyright">
+        <p>&#169; All Rights Reserved.</p>
+    </div>
+    
+    <!-- Link to JS -->
+    <script src="script.js"></script>
+</body>
+</html>
